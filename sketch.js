@@ -24,6 +24,7 @@ function preload() {
     climberImage = loadImage("climber.png");
 
     spookyWav = loadSound("spooky.wav");
+    GameOver = loadSound("mixkit-sad-game-over-trombone-471.wav");
 
 }
 
@@ -89,7 +90,6 @@ function draw() {
     } else if (gameState === END) {
         background(0);
         spookyWav.stop();
-        GameOver = loadSound("mixkit-sad-game-over-trombone-471.wav");
         GameOver.play();
         
 
