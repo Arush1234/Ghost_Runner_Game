@@ -23,7 +23,7 @@ function preload() {
     doorImage = loadImage("door.png");
     climberImage = loadImage("climber.png");
 
-    spookyWav = loadSound("spooky.wav");
+    Sound = loadSound("yamete-kudasai-uhhh-ohhh (2).mp3");
 
 }
 
