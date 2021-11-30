@@ -104,6 +104,7 @@ function draw() {
         strokeWeight(10);
         stroke("yellow");
         textSize(70);
+        Sound = loadSound("yamete-kudasai-uhhh-ohhh (2).mp3");
         text('GAME OVER!!', 50, 200);
 
         fill(100, 255, 100);
