@@ -10,6 +10,7 @@ var door, doorImage;
 
 var door, doorImage;
 var spookyWav;
+var GameOver
 
 var detector;
 
@@ -87,14 +88,17 @@ function draw() {
 
     } else if (gameState === END) {
         background(0);
+        spookyWav.stop();
+        GameOver = loadSound("mixkit-sad-game-over-trombone-471.wav");
+        GameOver.play();
+        
 
         tower.visible = false;
         ghost.visible = false;
         climberGroup.destroyEach();
         doorGroup.destroyEach();
         detectorGroup.destroyEach();
-
-        spookyWav.stop();
+        
 
         ghost.x = 300;
         ghost.y = 300;
