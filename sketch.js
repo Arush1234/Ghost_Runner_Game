@@ -22,7 +22,7 @@ function preload() {
     doorImage = loadImage("door.png");
     climberImage = loadImage("climber.png");
 
-    spookyWav = loadSound("");
+    spookyWav = loadSound("spooky.wav");
 
 }
 
