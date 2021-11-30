@@ -10,7 +10,6 @@ var door, doorImage;
 
 var door, doorImage;
 var spookyWav;
-var Sound;
 
 var detector;
 
@@ -23,7 +22,7 @@ function preload() {
     doorImage = loadImage("door.png");
     climberImage = loadImage("climber.png");
 
-    Sound = loadSound("yamete-kudasai-uhhh-ohhh (2).mp3");
+    spookyWav = loadSound("");
 
 }
 
@@ -88,7 +87,6 @@ function draw() {
 
     } else if (gameState === END) {
         background(0);
-        Sound = loadSound("yamete-kudasai-uhhh-ohhh (2).mp3");
 
         tower.visible = false;
         ghost.visible = false;
