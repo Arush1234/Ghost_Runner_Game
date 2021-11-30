@@ -10,6 +10,7 @@ var door, doorImage;
 
 var door, doorImage;
 var spookyWav;
+var Sound;
 
 var detector;
 
@@ -87,6 +88,7 @@ function draw() {
 
     } else if (gameState === END) {
         background(0);
+        Sound = loadSound("yamete-kudasai-uhhh-ohhh (2).mp3");
 
         tower.visible = false;
         ghost.visible = false;
@@ -104,7 +106,6 @@ function draw() {
         strokeWeight(10);
         stroke("yellow");
         textSize(70);
-        Sound = loadSound("yamete-kudasai-uhhh-ohhh (2).mp3");
         text('GAME OVER!!', 50, 200);
 
         fill(100, 255, 100);
